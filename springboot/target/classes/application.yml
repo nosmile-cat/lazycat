@@ -1,0 +1,15 @@
+server:
+  port: 8788
+##名称
+spring:
+  application:
+    name: app-ellis-member
+##注册中心配置
+eureka:
+  client:
+    service-url:
+      defaultZone:  http://127.0.0.1:8760/eureka/
+    ##true，把自己注册到注册中心上，
+    register-with-eureka: false
+    ##检索服务信息
+    fetch-registry: false
